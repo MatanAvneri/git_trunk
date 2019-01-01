@@ -1589,3 +1589,11 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
+
+
+/*******************
+* OVERRIDES
+*******************/
+img[data-gif] {
+  border: none !important;
+}
