@@ -29,15 +29,24 @@
             <section>
                 <h1>Welcome</h1>
                 <img height="350" alt="hello" data-gif src="https://media.giphy.com/media/eoVusT7Pi9ODe/giphy.gif"/>
+                <aside class="notes">
+                    Hey, hows it going?
+                </aside>
             </section>
             <section>
                 <h1>Up?</h1>
-                <img alt="stay awakr" data-gif src="https://media.giphy.com/media/AEpaVDTAop4TC/giphy.gif"/>
+                <img alt="stay awake" data-gif src="https://media.giphy.com/media/AEpaVDTAop4TC/giphy.gif"/>
+                <aside class="notes">
+                    Just making sure your'e awake
+                </aside>
             </section>
         </section>
         <section>
             <section>
                 <h2>Git</h2>
+                <aside class="notes">
+                    Let's talk about git
+                </aside>
             </section>
             <section>
                 <h2>Git</h2>
@@ -46,6 +55,9 @@
                     <li>CI/CD</li>
                     <li>Knowledge Sharing</li>
                 </ul>
+                <aside class="notes">
+                    What do we use git for ... source control, CI/CD, knowledge share
+                </aside>
             </section>
         </section>
         <section>
@@ -53,14 +65,28 @@
                 <h2>Git === Mess
                     <small style='vertical-align: middle;'>(sometimes)</small>
                 </h2>
-                <img height="350" alt="messy git" data-gif src="https://media.giphy.com/media/11CoSl1b4qlSH6/giphy.gif"/>
+                <img height="350" alt="messy git" data-gif
+                     src="https://media.giphy.com/media/11CoSl1b4qlSH6/giphy.gif"/>
+                <aside class="notes">
+                    Sometimes it feels like a tool that should help us, hurts us
+                </aside>
             </section>
             <section>
                 <h2>Git === Mess
                     <small style='vertical-align: middle;'>(sometimes)</small>
                 </h2>
                 <img alt="bad git log" height="540" src="lib/images/bad_git_log.png"/>
+                <aside class="notes">
+                    A lovely image to demonstrate
+                </aside>
             </section>
+        </section>
+        <section>
+            <h2>Let's Dive in</h2>
+            <img src="https://media.giphy.com/media/l0MYKtrCEHRzb4fZe/giphy.gif" data-gif alt="diving is fun">
+            <aside class="notes">
+                Let's dive in and talk a little on why it's like that
+            </aside>
         </section>
         <section>
             <section>
@@ -77,6 +103,9 @@
             <section>
                 <h2>Commits - Not readable</h2>
                 <img alt="bad commit log" src="lib/images/bad_commit_log.png"/>
+                <aside class="notes">
+                    If you can read this log, you have my respect
+                </aside>
             </section>
             <section>
                 <h2>Commits - Let's solve</h2>
@@ -148,6 +177,12 @@
             <section>
                 <h2>Merge/Pull Requests</h2>
                 <p>
+                    <img alt="bad git log" height="540" src="lib/images/bad_git_log.png"/>
+                </p>
+            </section>
+            <section>
+                <h2>Merge/Pull Requests</h2>
+                <p>
                     Squash / Rebase<br/>
                     <img alt="nice git log" src="lib/images/nice_git_log.png"/>
                 </p>
@@ -174,6 +209,9 @@
                 <p>
                     Don't add branches to master repository
                 </p>
+                <aside class="notes">
+                    You must be asking yourself how? Well it's easy
+                </aside>
             </section>
             <section>
                 <h2>Branches</h2>
@@ -193,12 +231,23 @@
                         Downstream - Your "copy"
                     </li>
                 </ul>
+                <aside class="notes">
+                    Forks is a simple concept, you clone the original repo and create a copy for yourself.
+                    You make merge requests into the upstream, which is the original repo but develop on
+                    your copy, the downstream
+                </aside>
             </section>
         </section>
         <section>
             <section>
                 <h2>Releases</h2>
-                <img alt="launch" src="https://media.giphy.com/media/NRWFU8lq7hCXS/giphy.gif" data-gif/>
+                <img alt="launch" src="https://media.giphy.com/media/3Cpj1wgUwH5Kw/giphy.gif" data-gif/>
+                <aside class="notes">
+                    Release should be an easy painless process, which should be automated, especially when you want CI/CD.
+                    We don't want any complicated method.
+                    What's the best method?
+                    Well, in my opinion, by using semantic releases it makes it much easier
+                </aside>
             </section>
             <section>
                 <h2>Releases</h2>
@@ -209,6 +258,9 @@
                     <li>Commits with BREAKING CHANGE in body or footer will trigger breaking releases, think 1.0.0
                     </li>
                 </ul>
+                <aside class="notes">
+                    Btw, if your'e using semantic commits as well you have many tools that automate this for you
+                </aside>
             </section>
         </section>
         <section>
@@ -268,6 +320,7 @@
   // - https://github.com/hakimel/reveal.js#dependencies
   Reveal.initialize({
     fragmentInURL: true,
+    // showNotes: true,
     dependencies: [
       { src: 'plugin/markdown/marked.js' },
       { src: 'plugin/markdown/markdown.js' },
